@@ -32,8 +32,8 @@ function ForecastChart({ title, items }) {
     responsive: true,
     scales: {
       y: {
-        ticks: { color: 'white', stepSize: 1 },
-        grace: '5%',
+        ticks: { color: 'white' },
+        grace: '1%',
         grid: {
           tickColor: 'transparent',
         },

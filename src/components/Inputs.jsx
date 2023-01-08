@@ -38,7 +38,7 @@ function Inputs({ setQuery, units, setUnits }) {
           onKeyDown={handleKeyDown}
           type='text'
           placeholder='Search for city...'
-          className='text-xl font-light p-2 w-full shadow-xl rounded-lg  focus:outline-none capitalize placeholder:lowercase'
+          className='md:text-xl font-light p-2 w-full shadow-xl rounded-lg  focus:outline-none capitalize placeholder:lowercase'
         />
         <UilSearch
           size={25}

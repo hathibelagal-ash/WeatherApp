@@ -30,7 +30,7 @@ function TopButtons({ setQuery }) {
         return (
           <button
             key={city.id}
-            className='text-white text-lg font-medium'
+            className='text-white text-sm md:text-lg md:font-medium'
             onClick={e => setQuery({ q: city.title })}
           >
             {city.title}

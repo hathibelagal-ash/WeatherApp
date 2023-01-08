@@ -27,10 +27,10 @@ function Forecast({ title, items }) {
               <img src={iconUrlFromCode(item.icon)} alt='' className='w-12 my-1' />
 
               {forecastSwitch ? (
-                <p className='font-medium'>{item.temp}°</p>
+                <p className='text-sm font-light md:font-medium'>{item.temp}°</p>
               ) : (
-                <p className='font-medium'>
-                  {item.temp_min}°<span className='font-extralight'> / </span>
+                <p className='text-xs font-extralight md:font-medium md:text-base'>
+                  {item.temp_min}°<span className='font-extralight mx-[3px] md:mx-1'>|</span>
                   {item.temp_max}°
                 </p>
               )}

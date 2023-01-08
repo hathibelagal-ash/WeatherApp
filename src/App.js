@@ -23,7 +23,7 @@ function App() {
   }, [query, units]);
 
   return (
-    <div className='mx-auto max-w-screen-lg my-10 px-32'>
+    <div className='mx-auto my-6 px-4 md:max-w-[1024px] md:my-10 md:px-32'>
       <TopButtons setQuery={setQuery} />
       <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
 

@@ -12,12 +12,12 @@ This is a simple weather app. Default temperature information is for Hønefoss, 
 
 ### Run Locally
 
-git clone https://github.com/PetarJovanovic/WeatherApp.git.\
+git clone https://github.com/PetarJovanovic/WeatherApp.git. \
 Go to the project directory
 
 cd WeatherApp
 
-Before you run app locally you will have to create .env file and put your own API key, that you can create on https://openweathermap.org.\
+Before you run app locally you will have to create .env file and put your own API key, that you can create on https://openweathermap.org. \
 Than you can run:
 
 `npm start`

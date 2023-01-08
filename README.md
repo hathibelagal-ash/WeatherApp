@@ -6,23 +6,21 @@ This is a simple weather app. Default temperature information is for Hønefoss, 
 
 ## Plans for further development
 
-- better error handling
-- better responsive layout and optimization for mobile devices
-- option to add your favorite cities instead of predetermined ones
+- Better error handling
+- Better responsive layout and optimization for mobile devices
+- Option to add your favorite cities instead of predetermined ones
 
 ### Run Locally
 
-git clone https://github.com/PetarJovanovic/WeatherApp.git. \
-Go to the project directory
+git clone https://github.com/PetarJovanovic/WeatherApp.git.
 
-cd WeatherApp
+Go to the project directory open it and enter WeatherApp.
 
-Before you run app locally you will have to create .env file and put your own API key, that you can create on https://openweathermap.org. \
-Than you can run:
+Before you run app locally you will have to create .env file and put your own API key, that you can create on https://openweathermap.org.
 
-`npm start`
+After you setup .env file you will need to run:
 
-Runs the app in the development mode.\
+`npm i` and after that
+`npm start` for app to run locally
+
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.

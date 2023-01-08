@@ -2,7 +2,7 @@
 
 https://weather-app-virid-psi.vercel.app/
 
-This is a simple weather app. Default temperature information is for Hønefoss, with search option for cities, button for getting information for location weather as well as switch between Celsius and Fahrenheit. You can also pick one of predetermined cities on top of the app(one of biggest cities in Norway). I've used react, chart.js, react-chartjs-2, luxon and tailwind css for this app.
+This is a simple weather app. Default temperature information is for Hønefoss, with search option for cities, button for getting information for location weather as well as switch between Celsius and Fahrenheit. You can also pick one of predetermined cities on top of the app(one of biggest cities in Norway). I've used react, chart.js, react-chartjs-2, luxon, OpenWeatherMap API and tailwind css for this app.
 
 ## Plans for further development
 

@@ -6,25 +6,41 @@ import TimeAndLocation from './components/TimeAndLocation';
 import TemperatureAndDetails from './components/TemperatureAndDetails';
 import Forecast from './components/Forecast';
 import getFormattedWeatherData from './services/weatherService';
+import { useEffect, useState } from 'react';
+import ForecastChart from './components/ForecastChart';
 
 function App() {
-  const fetchWeather = async () => {
-    const data = await getFormattedWeatherData({ q: 'honefoss' });
-    console.log(data);
-  };
+  const [query, setQuery] = useState({ q: 'honefoss' });
+  const [units, setUnits] = useState('metric');
+  const [weather, setWeather] = useState(null);
 
-  fetchWeather();
+  useEffect(() => {
+    const fetchWeather = async () => {
+      const data = await getFormattedWeatherData({ ...query, units });
+      setWeather(data);
+      console.log(weather);
+    };
+
+    fetchWeather();
+  }, [query, units]);
 
   return (
-    <div className='mx-auto max-w-screen-md py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400'>
-      <TopButtons />
-      <Inputs />
+    <div className='mx-auto max-w-screen-lg my-10 px-32'>
+      <TopButtons setQuery={setQuery} />
+      <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
 
-      <TimeAndLocation />
-      <TemperatureAndDetails />
+      {weather && (
+        <div>
+          <TimeAndLocation weather={weather} />
+          <TemperatureAndDetails weather={weather} />
 
-      <Forecast title='hourly forecast' />
-      <Forecast title='daily forecast' />
+          <Forecast title='hourly forecast' items={weather.hourly} />
+          <ForecastChart title='hourly forecast' items={weather.hourly} />
+
+          <Forecast title='daily forecast' items={weather.daily} />
+          <ForecastChart title='daily forecast' items={weather.daily} />
+        </div>
+      )}
     </div>
   );
 }

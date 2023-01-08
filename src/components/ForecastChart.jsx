@@ -28,6 +28,8 @@ function ForecastChart({ title, items }) {
   });
 
   const options = {
+    maintainAspectRatio: true,
+    responsive: true,
     scales: {
       y: {
         ticks: { color: 'white', stepSize: 1 },

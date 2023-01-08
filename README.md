@@ -16,7 +16,8 @@ git clone https://github.com/PetarJovanovic/WeatherApp.git.
 
 Go to the project directory open it and enter WeatherApp.
 
-Before you run app locally you will have to create .env file and put your own API key, that you can create on https://openweathermap.org.
+Before you run app locally you will have to create .env file and put your own API key, that you can create on https://openweathermap.org. \
+In .env file create variable `REACT_APP_API_KEY = /*here goes key that you created on link above*/`
 
 After you setup .env file you will need to run:
 

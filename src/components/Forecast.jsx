@@ -9,8 +9,6 @@ function Forecast({ title, items }) {
     else setForecastSwitch(0);
   }, [title]);
 
-  console.log(items);
-
   return (
     <div className='my-10'>
       <div className='flex items-center justify-start'>

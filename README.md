@@ -12,7 +12,7 @@ This is a simple weather app. Default temperature information is for Hønefoss, 
 
 ### Run Locally
 
-git clone https://github.com/PetarJovanovic/WeatherApp.git
+git clone https://github.com/PetarJovanovic/WeatherApp.git.\
 Go to the project directory
 
 cd WeatherApp
